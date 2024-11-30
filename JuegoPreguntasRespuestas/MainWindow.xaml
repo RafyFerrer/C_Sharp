@@ -1,0 +1,20 @@
+﻿<Window x:Class="JuegoPreguntasRespuestas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JuegoPreguntasRespuestas"
+        mc:Ignorable="d"
+        Title="JUEGO PREGUNTAS Y RESPUESTAS" Name="FormularioPrincipal" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,29,0,0" TextWrapping="Wrap" Text="A CONTINUACIÓN RESPONDA A LA SIGUIENTE PREGUNTA" VerticalAlignment="Top" Height="26" Width="692" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="Pregunta" HorizontalAlignment="Left" Margin="54,91,0,0" TextWrapping="Wrap" Text="Aquí aparece la pregunta" VerticalAlignment="Top" Width="654"/>
+        <TextBox x:Name="Respuesta" HorizontalAlignment="Left" Margin="54,127,0,0" TextWrapping="Wrap" Text="Introduzca la respuesta" VerticalAlignment="Top" Width="654" GotFocus="Respuesta_GotFocus"/>
+        <Button x:Name="btnValidar" Content="Validar Respuesta" HorizontalAlignment="Left" Margin="315,164,0,0" VerticalAlignment="Top" Height="37" Width="116" FontWeight="Bold" Click="btnValidar_Click"/>
+        <TextBlock x:Name="lblAciertos" HorizontalAlignment="Left" Margin="67,254,0,0" TextWrapping="Wrap" Text="ACIERTOS" VerticalAlignment="Top" Width="123" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="542,262,0,0" TextWrapping="Wrap" Text="FALLOS" VerticalAlignment="Top" FontWeight="Bold" Width="86"/>
+        <TextBlock x:Name="Aciertos" HorizontalAlignment="Left" Margin="67,291,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="Fallos" HorizontalAlignment="Left" Margin="542,299,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
